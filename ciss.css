@@ -1,0 +1,13 @@
+/* Style pour encadrer tout le CV */
+#header{
+    width: 50%; /* Tu peux ajuster la largeur selon tes préférences */
+    margin: 20px auto; /* Centrer le CV horizontalement */
+    padding: 20px; /* Ajouter de l’espace intérieur */
+    border: 2px solid black; /* Bordure noire */
+    border-radius: 10px; /* Coins arrondis (optionnel) */
+
+    background-color: darkgrey; /* Couleur de fond (optionnel) */
+}
+#conteneur_info_perso{
+    border: 1px solid black;
+}

@@ -1,0 +1,149 @@
+body {
+    background: #f4f6fb;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border: 2px solid #0078D7;
+    padding-bottom: 40px;
+}
+.cv-header {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.cv-main {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    padding: 30px;
+}
+ .icon-rotate {
+     display: inline-block;
+     animation: rotatePhoto 5s linear infinite;
+}
+.competence-field:hover {
+    color: #0078D7;
+    background: #e6f0fa;
+    border: 2px solid #0078D7;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+}
+.contact-field:hover {
+    color: #0078D7;
+    background: #e6f0fa;
+    transition: color 0.3s, background 0.3s;
+}
+.contact-field.active {
+    color: #0078D7;
+    background: #e6f0fa;
+    transition: color 0.3s, background 0.3s;
+}
+.category h3 {
+    border: 2px solid #0078D7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f8faff;
+}
+.etudes h2, .loisirs h2 {
+    border: 2px solid #0078D7;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: #f8faff;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: color 0.3s, background 0.3s;
+}
+.langues h2 {
+    border: 2px solid #0078D7;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: #f8faff;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: color 0.3s, background 0.3s;
+}
+
+.etudes h2:hover, .langues h2:hover, .loisirs h2:hover {
+    color: #0078D7;
+    background: #e6f0fa;
+    border: 2px solid #0078D7;
+}
+.highlight-name {
+    color: #000;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+ .rotate-photo {
+     display: block;
+     margin: 0 auto;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     animation: rotatePhoto 5s linear infinite;
+}
+
+    .cv-header {
+        background: linear-gradient(270deg, #ff6f61, #6a89cc, #38ada9, #f6b93b);
+        background-size: 800% 800%;
+        animation: gradientBG 1s ease-in-out infinite;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    @keyframes gradientBG {
+        0% {background-position:0% 50%;}
+        50% {background-position:100% 50%;}
+        100% {background-position:0% 50%;}
+    }
+
+@keyframes rotatePhoto {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.cv-header {
+    background-color:red;
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+
+.contact-info h1, .contact-info h2, .contact-info p {
+    margin: 100;
+    
+}

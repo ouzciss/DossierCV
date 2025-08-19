@@ -109,7 +109,6 @@ i {
 
 footer h1 {
 	text-align: center;
-	background-color: #000;
 	color: #fff;
 	padding: 20px ;
 	margin-top: 20px;
@@ -147,7 +146,7 @@ body {
     background: #f4f6fb;
 }
 
-.cv-container {
+.cv-container1 {
     max-width: 800px;
     margin: 40px auto;
     background: #fff;
@@ -180,7 +179,7 @@ body {
 }
 .competence-field:hover {
     color: #0078D7;
-    background: #e6f0fa;
+    background: yellow;
     border: 2px solid #0078D7;
     border-radius: 10px;
     padding: 10px 15px;
@@ -228,7 +227,7 @@ body {
 
 .etudes h2:hover, .langues h2:hover, .loisirs h2:hover {
     color: #0078D7;
-    background: #e6f0fa;
+    background: yellow;
     border: 2px solid #0078D7;
 }
 .highlight-name {
@@ -292,4 +291,224 @@ body {
     margin: 100;
     
 }
+
+
+/* CSS POUR IBRAHIMA SY */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+.cv-container {
+  background: #fff;
+  width: 900px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* #header1 */
+#header1 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #ffffff;
+  /* Dégradé animé */
+  background: linear-gradient(270deg, #2c3e50, #1abc9c, #16a085);
+  background-size: 600% 600%;
+  animation: gradientBG 10s ease infinite;
+  justify-content: flex-start;
+  padding-left: 80px; 
+}
+
+/* Animation de dégradé */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+#header1 .photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-right: 20px;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  animation: pulseGlow 3s infinite;
+  margin-left: 50px;
+}
+
+/* Effet au survol */
+#header1 .photo img:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 20px #1abc9c, 0 0 40px #16a085;
+}
+
+/* Animation halo lumineux */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0px #1abc9c;
+  }
+  50% {
+    box-shadow: 0 0 20px #1abc9c, 0 0 40px #16a085;
+  }
+  100% {
+    box-shadow: 0 0 0px #1abc9c;
+  }
+}
+#header1 .info {
+  margin-left: 50px; /* décale aussi le contenu texte */
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+
+.info p .icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Animation au survol */
+.info p .icon:hover {
+  transform: scale(1.3) rotate(15deg);
+  filter: drop-shadow(0 0 6px #1abc9c);
+}
+
+
+
+#header1 .poste {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #1abc9c;
+}
+
+/* Layout principal */
+#main {
+  display: flex;
+  padding: 20px;
+}
+
+/* Colonne gauche */
+.left {
+  width: 100%;
+  padding-right: 20px;
+  border-right: 2px solid #eee;
+}
+
+.left section {
+  margin-bottom: 20px;
+}
+
+.left h3 {
+  background: #2c3e50;
+  color: #fff;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+    border-radius: 6px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+
+}
+
+.left .experience {
+  margin-bottom: 15px;
+}
+
+.left .experience h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.left .experience .date {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Colonne droite */
+.right {
+  width: 35%;
+  padding-left: 20px;
+}
+
+.right section {
+  margin-bottom: 20px;
+}
+
+.right h3 {
+  background: #2c3e50;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.right ul {
+  list-style: none;
+}
+
+.right ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* espace entre les infos */
+}
+
+.footer-content p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer-content .icon-footer {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Animation au survol des icônes */
+.footer-content .icon-footer:hover {
+  transform: scale(1.3) rotate(10deg);
+  filter: drop-shadow(0 0 6px #1abc9c);
+}
+
+
+
+/* Au survol */
+h3:hover {
+  background-color: #1abc9c;   /* nouvelle couleur */
+  transform: scale(1.05);      /* léger zoom */
+}
+
 

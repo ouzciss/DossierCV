@@ -3,123 +3,136 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>CV - Fallou Wade</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	
-        <div>
-            
-
-			<a href="Accuil.html">
+	<!-- Barre de navigation -->
+	<div id="navigation-bar">
+		<a href="Accuil.html" id="back-button">
 			<span class="fa fa-arrow-circle-left" style="font-size:36px"></span>
-
-			</a>
-        </div>
+		</a>
 		
-	<section style="width: 60%; margin: auto;  border: 1px, solid;" >
-		 
-	<section>
-		<div id="header" >
-	
-			<div>
-				<img src="Image/mo.png" alt="Profile Image" >
-				
-			</div>
-
-			<div id="header-icon">
-				<p>Nom: Wade Prenom: Fallou</p>
-				
-				<div>
-					<i class="material-icons" style="font-size:26px">email</i>
-					<span 	 > Fallou@gmail.com</span> 
-				</div>
-
-				<div>
-					<i class="material-icons" style="font-size:26px">call</i>
-					<span>+221 77 123 45 67</span>
-				</div>
-
-				<div>
-					<i class="material-icons" style="font-size:26px">edit_location</i>
-					<span>Adresse</span>
-				</div>
-
-			</div>
+		<!-- Bouton de basculement de thème avec tooltip -->
+		<div class="theme-toggle-container" id="theme-toggle-container">
+			<button id="theme-toggle" class="tooltip">
+				<i class="material-icons">dark_mode</i>
+				<span class="tooltip-text" id="tooltip-text">Mode sombre</span>
+			</button>
 		</div>
+		
+	</div>
+		
+	<!-- Section principale du CV -->
+	<section style="width: 60%; margin: auto; border: 1px solid;">
+		 
+		<!-- Header avec informations profil -->
+		<section>
+			<div id="main-header">
+				<div>
+					<img id="profile-image" src="" alt="Profile Image">
+				</div>
+
+				<div id="header-info-container">
+					<p id="profile-name"></p>
+					
+					<div id="profile-email-container">
+						<i class="material-icons" style="font-size:26px">email</i>
+						<span id="profile-email"></span> 
+					</div>
+
+					<div id="profile-phone-container">
+						<i class="material-icons" style="font-size:26px">call</i>
+						<span id="profile-phone"></span>
+					</div>
+
+					<div id="profile-address-container">
+						<i class="material-icons" style="font-size:26px">edit_location</i>
+						<span id="profile-address"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section contenu principal -->
+		<section id="main-content">
+			
+			<!-- Section Expérience Professionnelle -->
+			<div class="block" id="experience-section">
+				<div id="experience-section-header">
+					<i class="material-icons" style="font-size:36px" id="experience-icon">card_travel</i>
+					<h3 id="experience-title">Expérience professionnel</h3>
+				</div>
+				<ul id="experience-list">
+					<li id="exp-1"></li>
+					<li id="exp-2"></li>
+					<li id="exp-3"></li>
+				</ul>
+			</div>
+
+			<!-- Section Compétences Techniques -->
+			<div class="block" id="competences-section">
+				<div id="competences-section-header">
+					<i class="material-icons" style="font-size:36px" id="competences-icon">input</i>
+					<h3 id="competences-title">Compétences Techniques</h3>
+				</div>
+				<ul id="competences-list">
+					<li id="comp-1"></li>
+					<li id="comp-2"></li>
+					<li id="comp-3"></li>
+				</ul>
+			</div>
+
+			<!-- Section Expérience Bénévole -->
+			<div class="block" id="benevole-section">
+				<div id="benevole-section-header">
+					<i class="material-icons" style="font-size:36px" id="benevole-icon">volunteer_activism</i>
+					<h3 id="benevole-title">Expérience Bénévole</h3>
+				</div>
+				<ul id="benevole-list">
+					<li id="ben-1"></li>
+					<li id="ben-2"></li>
+					<li id="ben-3"></li>
+				</ul>
+			</div>
+
+			<!-- Section Loisirs -->
+			<div class="block" id="loisirs-section">
+				<div id="loisirs-section-header">
+					<i class="material-icons" style="font-size:36px" id="loisirs-icon">sports_esports</i>
+					<h3 id="loisirs-title">Loisirs & Intérêts</h3>
+				</div>
+				<ul id="loisirs-list">
+					<li id="loisir-1"></li>
+					<li id="loisir-2"></li>
+					<li id="loisir-3"></li>
+				</ul>
+			</div>
+
+			<!-- Section Contact -->
+			<div class="block" id="contact-section">
+				<div id="contact-section-header">
+					<i class="material-icons" style="font-size:36px" id="contact-icon">contacts</i>
+					<h3 id="contact-title">Réseaux & Contact</h3>
+				</div>
+				<ul id="contact-list">
+					<li id="contact-1"></li>
+					<li id="contact-2"></li>
+					<li id="contact-3"></li>
+				</ul>
+			</div>
+
+		</section>
+		
+		<!-- Footer -->
+		<footer id="main-footer">
+			<h1 id="footer-email"></h1>
+		</footer>
 	</section>
-	
 
-		<section id="content"  >
-			<div class="block">
-
-				<div >
-					<i class="material-icons" style="font-size:36px">card_travel</i>
-					<h3>Expérience professionnel</h3>
-				</div>
-
-				<ul>
-					<li>Information 1</li>
-					<li>Information 2</li>
-					<li>Information 3</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<div >
-					<i class="material-icons" style="font-size:36px">input</i>
-					<h3>Expérience professionnel</h3>
-				</div>
-
-				<ul>
-					<li>Projet 1</li>
-					<li>Projet 2</li>
-					<li>Projet 3</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<div >
-					<i class="material-icons" style="font-size:36px">card_travel</i>
-					<h3>Wade Fallou</h3>
-				</div>
-				<ul>
-					<li>Competence 1</li>
-					<li>Competence 2</li>
-					<li>Competence 3</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<div >
-					<i class="material-icons" style="font-size:36px">card_travel</i>
-					<h3>Wade Fallou</h3>
-				</div>
-				<ul>
-					<li>Loisir 1</li>
-					<li>Loisir 2</li>
-					<li>Loisir 3</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<div >
-					<i class="material-icons" style="font-size:36px">card_travel</i>
-					<h3>Wade Fallou</h3>
-				</div>
-				<ul>
-					<li>Contact 1</li>
-					<li>Contact 2</li>
-					<li>Contact 3</li>
-				</ul>
-			</div>
-
-	</section>
-	<footer>
-		<h1>Fallouwade@gmail.com</h1>
-	</footer>
+	<!-- Script JavaScript -->
+	<script src="test.js"></script>
 </body>
 </html>

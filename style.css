@@ -1,146 +1,296 @@
+/* Styles de base */
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #ffffff;
+    color: #000000;
+}
 
-/* Animation pour faire tourner une icône */
+/* Styles pour la barre de navigation */
+#navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+#back-button {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#back-button:hover {
+    transform: translateX(-3px);
+}
+
+/* Animation des icônes */
 i {
-	display: inline-block;
-	animation: rotate 7s linear infinite;
+    display: inline-block;
+    animation: rotate 7s linear infinite;
 }
 
 @keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-#header {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 15px 100px 15px 70px;
-	animation: changeColor 4s infinite;
-	border-bottom: 3px solid #000;
-
+/* Header avec ID spécifique */
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 100px 15px 70px;
+    animation: changeColor 1s infinite;
+    border-bottom: 3px solid #000;
 }
-
 
 @keyframes changeColor {
-	0% {
-		background-color: green;
-	}
-
-	50% {
-		background-color: yellow;
-	}
-
-	100% {
-		background-color: red;
-	}
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: orange;
+    }
 }
 
-#header div:nth-child(1) img {
-	border: 1px solid #000;
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	animation: pulse 2s infinite;
-	
+#profile-image {
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-
-	50% {
-		transform: scale(1.1);
-	}
-
-	100% {
-		transform: scale(1);
-	}
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-#header-icon div,  #content .block div {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-top: 10px;
-
+#header-info-container div, #main-content .block div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-#content .block div{
-	border: 4px solid #000 ;
-	border-radius: 10px;
-	width: 90%;
-	padding-left: 20px;
-	display: flex;
-	background-color: aqua;
+#main-content .block div {
+    border: 4px solid #000;
+    border-radius: 10px;
+    width: 90%;
+    padding-left: 20px;
+    display: flex;
+    background-color: aqua;
+    transition: background-color 0.3s ease;
 }
 
-#content .block div:hover {
-	background-color: #1deec1;
-	transition:  0.3s ease;
+#main-content .block div:hover {
+    background-color: #1deec1;
+    transition: 0.3s ease;
 }
 
-#content {
-	padding: 50px;
+#main-content {
+    padding: 50px;
 }
 
-#header-icon div img, #content .block img {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	border: 1px solid #000;
-	padding: 2px;
-
+#header-info-container div img, #main-content .block img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    padding: 2px;
 }
 
-#content .block{
-	display: flex;
-	flex-direction: column;
-
+#main-content .block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-#content .block ul {
-	padding: 25px;
+#main-content .block ul {
+    padding: 25px;
 }
 
-footer h1 {
-	text-align: center;
-	color: #fff;
-	padding: 20px ;
-	margin-top: 20px;
+#main-content .block li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+}
+
+#main-footer {
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+#footer-email {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Styles du bouton de thème */
+.theme-toggle-container {
+    position: fixed;
+    top: 56px;
+    right: 25px;
+    z-index: 10;
+}
+
+#theme-toggle {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#theme-toggle i {
+    color: white;
+    font-size: 24px;
+    animation: none; /* Désactiver l'animation de rotation pour ce bouton */
+}
+
+/* Styles du tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 12px;
+    position: absolute;
+    z-index: 100;
+    bottom: 45px; /* Position plus basse pour être visible */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+    
 }
 
 
- table {
-                width: 100%;
-                border-collapse: collapse;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-            th, td {
-                padding: 12px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }
-            th {
-                background-color: #f2f2f2;
-            }
-            tr:hover {
-                background-color: #f5f5f5;
-            }
-            td {
-                background-color: #fff;
-            }
-            tr:nth-child(even) {
-                background-color: #f9f9f9;
-            }
-            tr:nth-child(odd) {
-                background-color: #f1f1f1;
-            }
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Mode sombre - seulement pour la section principale du CV */
+.dark-mode section[style*="width: 60%"] {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode #main-header {
+    border-bottom-color: #ffffff;
+}
+
+.dark-mode #profile-image {
+    border-color: #ffffff;
+}
+
+.dark-mode #main-content .block div {
+    border-color: #ffffff;
+    background-color: #2d4a5c;
+    color: #ffffff;
+}
+
+.dark-mode #main-content .block div:hover {
+    background-color: #1e3540;
+}
+
+.dark-mode #header-info-container div img, 
+.dark-mode #main-content .block img {
+    border-color: #ffffff;
+}
+
+.dark-mode #main-footer {
+    background-color: #0a0a0a;
+}
+
+.dark-mode #footer-email {
+    color: #ffffff;
+}
+
+/* Styles pour le mode sombre du tooltip */
+.dark-mode .tooltip-text {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-mode .tooltip-text::after {
+    border-color: transparent transparent #f0f0f0 transparent; /* Flèche inversée pour mode sombre */
+}
+
+/* Amélioration du bouton de retour */
+.fa-arrow-circle-left {
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-arrow-circle-left:hover {
+    color: #667eea;
+    transform: translateX(-3px);
+}
+
+.dark-mode .fa-arrow-circle-left {
+    color: #ffffff;
+}
+
+.dark-mode .fa-arrow-circle-left:hover {
+    color: #667eea;
+}
+
+/* Responsive */
+
+
+/* Animation d'apparition pour les blocs */
+.block {
+    animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 body {
     background: #f4f6fb;
@@ -265,7 +415,7 @@ body {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(450deg);
     }
 }
 .cv-header {

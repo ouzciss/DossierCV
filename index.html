@@ -1,119 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon CV </title>
+  <title>Mon CV</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
-<body id="body">
+<body id="ibrahima_diouf">
   <div>
-
-
     <a href="Accuil.html">
-      <span class="fa fa-arrow-circle-left" style="font-size:36px"></span>
-
+      <span class="fas fa-arrow-circle-left" style="font-size:36px"></span>
     </a>
   </div>
+
+  
   <div class="cv-container">
-    <!-- Header -->
     <header id="header1">
+      <button class="theme-toggle">
+   <i class="fas fa-sun"></i>
+   <i class="fas fa-moon"></i>
+  </button>
       <div class="photo">
-        <img src="Image/image.png" alt="Photo de profil">
+        <img id="profile-photo-ibrahima" src="Image/image.png" alt="Photo de profil">
       </div>
       <div class="info">
-        <h1>SY Ibrahima</h1>
-        <h2 class="poste">DEVELOPPEUR FULL-STACK</h2>
+        <h1 id="name-ibrahima"></h1>
+        <h2 id="job-title-ibrahima" class="poste"></h2>
         <p>
           <img src="Image/call.png" alt="Téléphone" class="icon">
-          77 700 00 00
+          <span id="phone-ibrahima"></span>
         </p>
         <p>
           <img src="Image/mail.png" alt="Email" class="icon">
-          info@cvexemple.com
+          <span id="email-ibrahima"></span>
         </p>
         <p>
           <img src="Image/adress.png" alt="Localisation" class="icon">
-          Dakar, Senegal
+          <span id="location-ibrahima"></span>
         </p>
       </div>
     </header>
-
+    
     <main id="main">
-      <!-- Colonne gauche -->
       <aside class="left">
         <section>
-          <h3>Experience Professionnelle</h3>
-          <p>Décrivez en quelques lignes votre parcours professionnel, vos compétences clés
-            pour le poste et vos objectifs de carrière.</p>
+          <h3>À propos de moi</h3>
+          <p id="profile-text-ibrahima"></p>
         </section>
-
+        
         <section>
-          <h3>Competence Technique</h3>
-          <div class="experience">
-            <h4>NOM ENTREPRISE | POSTE OCCUPÉ</h4>
-            <p class="date">Janvier 20xx – mars 20xx</p>
-            <p>Décrivez ici les fonctions que vous avez occupé, vos missions et résultats.</p>
-          </div>
-          <div class="experience">
-            <h4>NOM ENTREPRISE | POSTE OCCUPÉ</h4>
-            <p class="date">Janvier 20xx – mars 20xx</p>
-            <p>Décrivez ici les fonctions que vous avez occupé, vos missions et résultats.</p>
-          </div>
+          <h3>Competences</h3>
+          <ul id="competences-list-ibrahima">
+            </ul>
         </section>
-
+        
         <section>
-          <h3>Competence Fonctionnelle</h3>
-          <div class="experience">
-            <h4>NOM ENTREPRISE | POSTE OCCUPÉ</h4>
-            <p class="date">Janvier 20xx – mars 20xx</p>
-            <p>Décrivez ici les fonctions que vous avez occupé, vos missions et résultats.</p>
-          </div>
-          <div class="experience">
-            <h4>NOM ENTREPRISE | POSTE OCCUPÉ</h4>
-            <p class="date">Janvier 20xx – mars 20xx</p>
-            <p>Décrivez ici les fonctions que vous avez occupé, vos missions et résultats.</p>
-          </div>
+          <h3>Études et Certificats</h3>
+          <ul id="etudes-list-ibrahima">
+            </ul>
         </section>
-
+        
         <section>
-          <h3>Etude et Certificat</h3>
-          <p><b>DIPLÔME / NOM DE L’UNIVERSITÉ OU ÉCOLE</b><br>
-            20xx – 20xx<br>
-            Décrivez en une ligne les objectifs et spécialités de cette formation.</p>
+          <h3>Langues</h3>
+          <ul id="langues-list-ibrahima">
+            </ul>
         </section>
-
+        
         <section>
-          <h3>LANGUES et LOISIRS</h3>
-          <ul>
-            <li>Français : Courant</li>
-            <li>Anglais : Courant</li>
-            <li>Football</li>
-          </ul>
+          <h3>Loisirs</h3>
+          <ul id="loisirs-list-ibrahima">
+            </ul>
         </section>
-      </aside>
-
-      <section>
-
-      </section>
       </aside>
     </main>
+    
     <footer>
       <div class="footer-content">
         <p>
           <img src="Image/call.png" alt="Téléphone" class="icon-footer">
-          77 700 00 00
+          <span id="footer-phone-ibrahima"></span>
         </p>
         <p>
           <img src="Image/mail.png" alt="Email" class="icon-footer">
-          info@cvexemple.com
+          <span id="footer-email-ibrahima"></span>
         </p>
       </div>
     </footer>
   </div>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>

@@ -1,264 +1,30 @@
-
-/* Animation pour faire tourner une icône */
-i {
-	display: inline-block;
-	animation: rotate 7s linear infinite;
-}
-
-@keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-#header {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 15px 100px 15px 70px;
-	animation: changeColor 4s infinite;
-	border-bottom: 3px solid #000;
-
-}
-
-
-@keyframes changeColor {
-	0% {
-		background-color: green;
-	}
-
-	50% {
-		background-color: yellow;
-	}
-
-	100% {
-		background-color: red;
-	}
-}
-
-#header div:nth-child(1) img {
-	border: 1px solid #000;
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	animation: pulse 2s infinite;
-	
-}
-
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-
-	50% {
-		transform: scale(1.1);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
-
-#header-icon div,  #content .block div {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-top: 10px;
-
-}
-
-#content .block div{
-	border: 4px solid #000 ;
-	border-radius: 10px;
-	width: 90%;
-	padding-left: 20px;
-	display: flex;
-	background-color: aqua;
-}
-
-#content .block div:hover {
-	background-color: #1deec1;
-	transition:  0.3s ease;
-}
-
-#content {
-	padding: 50px;
-}
-
-#header-icon div img, #content .block img {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	border: 1px solid #000;
-	padding: 2px;
-
-}
-
-#content .block{
-	display: flex;
-	flex-direction: column;
-
-}
-
-#content .block ul {
-	padding: 25px;
-}
-
-footer h1 {
-	text-align: center;
-	color: #fff;
-	padding: 20px ;
-	margin-top: 20px;
-}
-
-
- table {
-                width: 100%;
-                border-collapse: collapse;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-            th, td {
-                padding: 12px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }
-            th {
-                background-color: #f2f2f2;
-            }
-            tr:hover {
-                background-color: #f5f5f5;
-            }
-            td {
-                background-color: #fff;
-            }
-            tr:nth-child(even) {
-                background-color: #f9f9f9;
-            }
-            tr:nth-child(odd) {
-                background-color: #f1f1f1;
-            }
+/* ========================================= */
+/* Styles Généraux & Animations    */
+/* ========================================= */
 
 body {
     background: #f4f6fb;
+    font-family: Arial, sans-serif;
 }
 
-.cv-container1 {
-    max-width: 800px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    border: 2px solid #0078D7;
-    padding-bottom: 40px;
-}
-.cv-header {
-    max-width: 800px;
-    margin: 40px auto 0 auto;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-}
-.contact-info {
-    max-width: 800px;
-    margin: 0 auto;
-}
-.cv-main {
-    max-width: 800px;
-    margin: 40px auto;
-    background: #fff;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    border-radius: 16px;
-    padding: 30px;
-}
- .icon-rotate {
-     display: inline-block;
-     animation: rotatePhoto 5s linear infinite;
-}
-.competence-field:hover {
-    color: #0078D7;
-    background: yellow;
-    border: 2px solid #0078D7;
-    border-radius: 10px;
-    padding: 10px 15px;
-    transition: color 0.3s, background 0.3s;
-}
-.contact-field:hover {
-    color: #0078D7;
-    background: #e6f0fa;
-    transition: color 0.3s, background 0.3s;
-}
-.contact-field.active {
-    color: #0078D7;
-    background: #e6f0fa;
-    transition: color 0.3s, background 0.3s;
-}
-.category h3 {
-    border: 2px solid #0078D7;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-    background: #f8faff;
-}
-.etudes h2, .loisirs h2 {
-    border: 2px solid #0078D7;
-    border-radius: 10px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    background: #f8faff;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    transition: color 0.3s, background 0.3s;
-}
-.langues h2 {
-    border: 2px solid #0078D7;
-    border-radius: 10px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    background: #f8faff;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    transition: color 0.3s, background 0.3s;
+i {
+    display: inline-block;
+    animation: rotate 7s linear infinite;
 }
 
-.etudes h2:hover, .langues h2:hover, .loisirs h2:hover {
-    color: #0078D7;
-    background: yellow;
-    border: 2px solid #0078D7;
-}
-.highlight-name {
-    color: #000;
-    font-size: 0.8em;
-    font-weight: normal;
-}
- .rotate-photo {
-     display: block;
-     margin: 0 auto;
-     width: 200px;
-     height: 200px;
-     border-radius: 50%;
-     animation: rotatePhoto 5s linear infinite;
-}
-
-    .cv-header {
-        background: linear-gradient(270deg, #ff6f61, #6a89cc, #38ada9, #f6b93b);
-        background-size: 800% 800%;
-        animation: gradientBG 1s ease-in-out infinite;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        gap: 30px;
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
     }
-
-    @keyframes gradientBG {
-        0% {background-position:0% 50%;}
-        50% {background-position:100% 50%;}
-        100% {background-position:0% 50%;}
+    100% {
+        transform: rotate(360deg);
     }
+}
+
+.icon-rotate {
+    display: inline-block;
+    animation: rotatePhoto 5s linear infinite;
+}
 
 @keyframes rotatePhoto {
     0% {
@@ -268,13 +34,228 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/* ========================================= */
+/* Styles pour la page d'accueil (Accuil.html)      */
+/* ========================================= */
+
+.cv-gallery-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0f2f5;
+}
+
+.cv-gallery-container h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.cv-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cv-card {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.cv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.cv-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007BFF;
+    transition: border-color 0.3s ease;
+}
+
+.cv-card:hover img {
+    border-color: #5dca68;
+}
+
+.card-info {
+    margin-top: 20px;
+}
+
+.card-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+.card-info p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.card-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #007BFF;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cv-card:hover .card-icon {
+    opacity: 1;
+}
+
+/* ========================================= */
+/* Styles pour le CV de Fallou */
+/* ========================================= */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 100px 15px 70px;
+    animation: changeColor 4s infinite;
+    border-bottom: 3px solid #000;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+#header div:nth-child(1) img {
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#header-icon div,
+#content .block div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#content .block div {
+    border: 4px solid #000;
+    border-radius: 10px;
+    width: 90%;
+    padding-left: 20px;
+    background-color: aqua;
+}
+
+#content .block div:hover {
+    background-color: #1deec1;
+    transition: 0.3s ease;
+}
+
+#content {
+    padding: 50px;
+}
+
+#header-icon div img,
+#content .block img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    padding: 2px;
+}
+
+#content .block {
+    display: flex;
+    flex-direction: column;
+}
+
+#content .block ul {
+    padding: 25px;
+}
+
+footer h1 {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ========================================= */
+/* Styles pour le CV de Serge Senghor */
+/* ========================================= */
+
+.cv-container1 {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    border: 2px solid #0078D7;
+    padding-bottom: 40px;
+}
+
 .cv-header {
-    background-color:red;
-    padding: 10px;
-    
+    background: linear-gradient(270deg, #ff6f61, #6a89cc, #38ada9, #f6b93b);
+    background-size: 800% 800%;
+    animation: gradientBG 1s ease-in-out infinite;
+    padding: 20px;
     display: flex;
     align-items: center;
     gap: 30px;
+    background-color: red;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.cv-header .photo-container {
+    padding: 10px;
 }
 
 .profile-photo {
@@ -283,232 +264,784 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info h1, .contact-info h2, .contact-info p {
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info h1,
+.contact-info h2,
+.contact-info p {
     margin: 100;
-    
 }
 
-
-/* CSS POUR IBRAHIMA SY */
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.contact-field:hover {
+    color: #0078D7;
+    background: #e6f0fa;
+    transition: color 0.3s, background 0.3s;
 }
 
-#body {
-  background: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-    font-family: Arial, sans-serif;
-
+.competence-field:hover {
+    color: #0078D7;
+    background: yellow;
+    border: 2px solid #0078D7;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
 }
+
+.category h3 {
+    border: 2px solid #0078D7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f8faff;
+}
+
+.etudes h2,
+.loisirs h2,
+.langues h2,
+.competences h2 {
+    border: 2px solid #0078D7;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: #f8faff;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: color 0.3s, background 0.3s;
+}
+
+.etudes h2:hover,
+.langues h2:hover,
+.loisirs h2:hover,
+.competences h2:hover {
+    color: #0078D7;
+    background: yellow;
+    border: 2px solid #0078D7;
+}
+
+.highlight-name {
+    color: #000;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+/* ========================================= */
+/* Styles pour le CV d'Ibrahima */
+/* ========================================= */
 
 .cv-container {
-  background: #fff;
-  width: 900px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
-/* #header1 */
 #header1 {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  color: #ffffff;
-  /* Dégradé animé */
-  background: linear-gradient(270deg, #2c3e50, #1abc9c, #16a085);
-  background-size: 600% 600%;
-  animation: gradientBG 10s ease infinite;
-  justify-content: flex-start;
-  padding-left: 80px; 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+    background: linear-gradient(270deg, #2c3e50, #1abc9c, #16a085);
+    background-size: 600% 600%;
+    animation: gradientBG 10s ease infinite;
+    justify-content: flex-start;
+    padding-left: 80px;
 }
-
-/* Animation de dégradé */
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 
 #header1 .photo img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin-right: 20px;
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
-  animation: pulseGlow 3s infinite;
-  margin-left: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-right: 20px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    animation: pulseGlow 3s infinite;
+    margin-left: 50px;
 }
 
-/* Effet au survol */
 #header1 .photo img:hover {
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 0 20px #1abc9c, 0 0 40px #16a085;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px #1abc9c, 0 0 40px #16a085;
 }
 
-/* Animation halo lumineux */
 @keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 0px #1abc9c;
-  }
-  50% {
-    box-shadow: 0 0 20px #1abc9c, 0 0 40px #16a085;
-  }
-  100% {
-    box-shadow: 0 0 0px #1abc9c;
-  }
+    0% {
+        box-shadow: 0 0 0px #1abc9c;
+    }
+    50% {
+        box-shadow: 0 0 20px #1abc9c, 0 0 40px #16a085;
+    }
+    100% {
+        box-shadow: 0 0 0px #1abc9c;
+    }
 }
+
 #header1 .info {
-  margin-left: 50px; /* décale aussi le contenu texte */
+    margin-left: 50px;
 }
 
 .info p {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  margin: 6px 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 6px 0;
 }
-
 
 .info p .icon {
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
-  transition: transform 0.4s ease, filter 0.4s ease;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-/* Animation au survol */
 .info p .icon:hover {
-  transform: scale(1.3) rotate(15deg);
-  filter: drop-shadow(0 0 6px #1abc9c);
+    transform: scale(1.3) rotate(15deg);
+    filter: drop-shadow(0 0 6px #1abc9c);
 }
-
-
 
 #header1 .poste {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #1abc9c;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #1abc9c;
 }
 
-/* Layout principal */
 #main {
-  display: flex;
-  padding: 20px;
+    display: flex;
+    padding: 20px;
 }
 
-/* Colonne gauche */
 .left {
-  width: 100%;
-  padding-right: 20px;
-  border-right: 2px solid #eee;
+    width: 100%;
+    padding-right: 20px;
+    border-right: 2px solid #eee;
 }
 
 .left section {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .left h3 {
-  background: #2c3e50;
-  color: #fff;
-  padding: 10px 10px;
-  margin-bottom: 10px;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 10px;
+    margin-bottom: 10px;
     border-radius: 6px;
-  transition: background-color 0.4s ease, transform 0.3s ease;
-
+    transition: background-color 0.4s ease, transform 0.3s ease;
 }
 
 .left .experience {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .left .experience h4 {
-  font-size: 14px;
-  font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .left .experience .date {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 5px;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
 }
 
-/* Colonne droite */
 .right {
-  width: 35%;
-  padding-left: 20px;
+    width: 35%;
+    padding-left: 20px;
 }
 
 .right section {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .right h3 {
-  background: #2c3e50;
-  color: #fff;
-  padding: 5px 10px;
-  margin-bottom: 10px;
+    background: #2c3e50;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
 }
 
 .right ul {
-  list-style: none;
+    list-style: none;
 }
 
 .right ul li {
-  margin-bottom: 8px;
-  font-size: 14px;
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
 footer {
-  background: #2c3e50;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 30px;
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .footer-content {
-  display: flex;
-  justify-content: center;
-  gap: 40px; /* espace entre les infos */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 .footer-content p {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
 }
 
 .footer-content .icon-footer {
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Animation au survol des icônes */
 .footer-content .icon-footer:hover {
-  transform: scale(1.3) rotate(10deg);
-  filter: drop-shadow(0 0 6px #1abc9c);
+    transform: scale(1.3) rotate(10deg);
+    filter: drop-shadow(0 0 6px #1abc9c);
 }
 
-
-
-/* Au survol */
 h3:hover {
-  background-color: #1abc9c;   /* nouvelle couleur */
-  transform: scale(1.05);      /* léger zoom */
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+/* ========================================= */
+/* Styles pour le CV d'Ousmane Ciss */
+/* ========================================= */
+
+#body2 {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#conteneur-principale {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#conteneur_info_perso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: -1cm;
+}
+
+#conteneur_info_perso:hover {
+    background-color: #5dca68;
+}
+
+#conteneur_info_perso .photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#conteneur_info_perso:hover .photo img {
+    transform: scale(1.1);
+}
+
+.infos p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.infos i {
+    margin-right: 10px;
+}
+
+.fas {
+    transition: transform 0.3s ease;
+}
+
+.fas:hover {
+    transform: rotate(360deg);
+}
+
+/* J'ai rendu cette règle plus spécifique pour ne cibler que les titres du CV d'Ousmane */
+#ousmane_ciss h2 {
+    color: #007BFF;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+dl {
+    padding-left: 20px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+#footer1 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(1, 0, 0);
+    bottom: 0;
+    width: 100%;
+}
+
+#footer1 p {
+    font-size: 14px;
+    float: center;
+}
+
+#footer1 a {
+    color: #070000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer1 a:hover {
+    text-decoration: none;
+}
+
+.uno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Correctif : j'ai rendu le style des titres plus spécifiques */
+.uno h2, .uno h3 {
+    color: #fff;
+}
+
+.uno:hover {
+    background-color: #5dca68;
+    border-color: #5dca68;
+}
+
+#conteneur-principale dt {
+    color: black;
+}
+
+@keyframes rotate-45-deg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-photo {
+    /* Appliquez l'animation 'rotate-45-deg' */
+    animation: rotate-45-deg 5s linear infinite;
+    /* Ajoutez un point de pivot pour la rotation */
+    transform-origin: center center;
+}
+/* --- Styles pour le Bouton de Thème --- */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+/* Style de l'icône de soleil (par défaut) */
+.theme-toggle .fa-sun {
+    color: yellow;
+}
+
+/* Cache l'icône de lune par défaut */
+.theme-toggle .fa-moon {
+    display: none;
+}
+
+/* --- Styles des Thèmes --- */
+
+/* 1. Mode Sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode .cv-container1 {
+    background: #1e1e1e;
+    border-color: #00bcd4;
+}
+
+body.dark-mode .cv-header {
+    background: #333;
+    animation: none;
+    color: #f0f0f0;
+}
+
+body.dark-mode .cv-main {
+    background: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode .cv-footer {
+    background: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode .contact-info {
+    color: #f0f0f0;
+}
+
+body.dark-mode .category h3,
+body.dark-mode .etudes h2,
+body.dark-mode .langues h2,
+body.dark-mode .loisirs h2,
+body.dark-mode .competences h2 {
+    background: #252525;
+    border-color: #00bcd4;
+    color: #f0f0f0;
+}
+
+/* Styles spécifiques au CV d'Ousmane en mode sombre */
+body.dark-mode#ousmane_ciss #conteneur_info_perso,
+body.dark-mode#ousmane_ciss .uno {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #00bcd4;
+}
+
+body.dark-mode#ousmane_ciss .uno h2,
+body.dark-mode#ousmane_ciss .uno h3 {
+    color: #f0f0f0;
+}
+
+body.dark-mode#ousmane_ciss h2 {
+    color: #f0f0f0;
+}
+
+/* Styles spécifiques au CV de Fallou en mode sombre */
+body.dark-mode#fallou_wade {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode#fallou_wade #header {
+    background-color: #333;
+    border-bottom: 3px solid #f0f0f0;
+    animation: none;
+}
+
+body.dark-mode#fallou_wade #header-icon,
+body.dark-mode#fallou_wade #header-icon p,
+body.dark-mode#fallou_wade #header-icon span {
+    color: #f0f0f0;
+}
+
+body.dark-mode#fallou_wade #content .block div {
+    background-color: #444;
+    border-color: #f0f0f0;
+}
+
+body.dark-mode#fallou_wade #content .block div h3,
+body.dark-mode#fallou_wade #content .block div i {
+    color: #f0f0f0;
+}
+
+body.dark-mode#fallou_wade #content ul li {
+    color: #f0f0f0;
+}
+
+body.dark-mode#fallou_wade #content .block div:hover {
+    background-color: #666;
+    transition: 0.3s ease;
+}
+
+body.dark-mode#fallou_wade footer h1 {
+    color: #f0f0f0;
+}
+
+/* Dans le mode sombre, on cache le soleil et on affiche la lune */
+.theme-toggle .fa-sun {
+    display: block;
+}
+
+.theme-toggle .fa-moon {
+    display: none;
+}
+
+body.dark-mode .theme-toggle .fa-sun {
+    display: none;
+}
+body.dark-mode .theme-toggle .fa-moon {
+    display: inline-block;
+    color: #f0f0f0;
+}
+
+/* 2. Mode Clair Tout Blanc */
+body.all-white-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.all-white-mode .cv-container1 {
+    background: #fff;
+    border-color: #0078D7;
+}
+
+body.all-white-mode .cv-header {
+    background: #fff;
+    animation: none;
+    color: #000;
+}
+
+body.all-white-mode .cv-main {
+    background: #fff;
+    color: #000;
+}
+
+body.all-white-mode .cv-footer {
+    background: #fff;
+    color: #000;
+}
+
+body.all-white-mode .contact-info {
+    color: #000;
+}
+
+body.all-white-mode .category h3,
+body.all-white-mode .etudes h2,
+body.all-white-mode .langues h2,
+body.all-white-mode .loisirs h2,
+body.all-white-mode .competences h2 {
+    background: #f8faff;
+    border-color: #0078D7;
+    color: #000;
+}
+
+/* Styles spécifiques au CV d'Ousmane en mode tout blanc */
+body.all-white-mode#ousmane_ciss #conteneur_info_perso,
+body.all-white-mode#ousmane_ciss .uno {
+    background-color: #fff;
+    color: #000;
+    border-color: #0078D7;
+}
+
+body.all-white-mode#ousmane_ciss .uno h2,
+body.all-white-mode#ousmane_ciss .uno h3 {
+    color: #000;
+}
+
+body.all-white-mode#ousmane_ciss h2 {
+    color: #000;
+}
+
+/* Styles spécifiques au CV de Fallou en mode tout blanc */
+body.all-white-mode#fallou_wade {
+    background-color: #fff;
+    color: #000;
+}
+
+body.all-white-mode#fallou_wade #header {
+    background-color: #f4f6fb;
+    border-bottom: 3px solid #000;
+    animation: none;
+}
+
+body.all-white-mode#fallou_wade #header-icon,
+body.all-white-mode#fallou_wade #header-icon p,
+body.all-white-mode#fallou_wade #header-icon span {
+    color: #000;
+}
+
+body.all-white-mode#fallou_wade #content .block div {
+    background-color: #eee;
+    border-color: #000;
+}
+
+body.all-white-mode#fallou_wade #content .block div h3,
+body.all-white-mode#fallou_wade #content .block div i {
+    color: #000;
+}
+
+body.all-white-mode#fallou_wade #content ul li {
+    color: #000;
+}
+
+body.all-white-mode#fallou_wade #content .block div:hover {
+    background-color: #ddd;
+}
+
+body.all-white-mode#fallou_wade footer h1 {
+    color: #000;
+}
+
+/* Dans le mode tout blanc, on affiche le soleil noir et on cache la lune */
+.theme-toggle .fa-sun {
+    display: block;
+    color: yellow;
+}
+.theme-toggle .fa-moon {
+    display: none;
+}
+
+body.all-white-mode .theme-toggle .fa-sun {
+    color: black;
+    display: inline-block;
+}
+body.all-white-mode .theme-toggle .fa-moon {
+    display: none;
 }
 
 
+body.all-white-mode#fallou_wade footer {
+    background-color: #f4f6fb; /* Couleur de fond pour le mode tout blanc */
+}
+
+body.all-white-mode#fallou_wade footer h1 {
+    color: #000;
+}
+
+
+body.dark-mode#fallou_wade footer {
+    background-color: #333; /* Couleur de fond pour le mode sombre */
+}
+
+body.dark-mode#fallou_wade footer h1 {
+    color: #f0f0f0;
+}
+
+body.dark-mode#ousmane_ciss #footer1 {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+
+
+body.all-white-mode#ousmane_ciss #footer1 {
+    background-color: #f4f6fb;
+    color: #000;
+}
+
+body.dark-mode#ibrahima_diouf footer {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode#ibrahima_diouf footer .icon-footer {
+    filter: invert(1);
+}
+
+body.all-white-mode#ibrahima_diouf footer {
+    background-color: #f4f6fb;
+    color: #000;
+}
+
+body.all-white-mode#ibrahima_diouf footer .icon-footer {
+    filter: invert(0);
+}
+
+body.dark-mode#ibrahima_diouf #header1 {
+    background: #333;
+    color: #f0f0f0;
+    animation: none;
+}
+
+body.dark-mode#ibrahima_diouf #header1 .icon {
+    filter: invert(1);
+}
+
+body.dark-mode#ibrahima_diouf .left h3 {
+    background: #444;
+    color: #f0f0f0;
+}
+body.all-white-mode#ibrahima_diouf #header1 {
+    background: #f4f6fb;
+    color: #000;
+    animation: none;
+}
+
+body.all-white-mode#ibrahima_diouf #header1 .icon {
+    filter: invert(0);
+}
+
+body.all-white-mode#ibrahima_diouf .left h3 {
+    background: #f8faff;
+    color: #000;
+}
+
+body.dark-mode#ibrahima_diouf .theme-toggle .fa-sun {
+    display: none;
+}
+body.dark-mode#ibrahima_diouf .theme-toggle .fa-moon {
+    display: inline-block;
+    color: #f0f0f0;
+}
+
+
+body.all-white-mode#ibrahima_diouf .theme-toggle .fa-sun {
+    display: inline-block;
+    color: black;
+}
+
+body.all-white-mode#ibrahima_diouf .theme-toggle .fa-moon {
+    display: none;
+} 
+
+body.dark-mode#ibrahima_diouf .left ul,
+body.dark-mode#ibrahima_diouf .left li {
+    color: #f0f0f0;
+}
+
+body.dark-mode#ibrahima_diouf .cv-container {
+    background-color: #1e1e1e; /* Fond du CV */
+}
+
+body.dark-mode#ibrahima_diouf .left p,
+body.dark-mode#ibrahima_diouf .left ul li {
+    color: #f0f0f0; /* Texte des sections de gauche */
+}
+
+body.dark-mode#ibrahima_diouf .left {
+    border-right-color: #444; /* Couleur de la bordure droite */
+}
+
+body.all-white-mode#ibrahima_diouf .cv-container {
+    background-color: #fff;
+}
+
+body.all-white-mode#ibrahima_diouf .left p,
+body.all-white-mode#ibrahima_diouf .left ul li {
+    color: #000;
+}
+
+body.all-white-mode#ibrahima_diouf .left {
+    border-right-color: #eee;
+}

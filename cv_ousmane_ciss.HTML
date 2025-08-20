@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ousmane Ciss</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="ousmane_ciss">
+    
+    <div>
+        <a href="Accuil.html">
+            <span class="fa fa-arrow-circle-left" style="font-size:36px"></span>
+        </a>
+    </div>
+
+    <div id="conteneur-principale">
+        <header id="conteneur_info_perso">
+            <div class="photo">
+                <img id="profile-photo-ousmane_ciss" src="Image/ouzi.jfif" alt="Photo de Ousmane Ciss">
+            </div>
+            <div class="infos">
+                <button class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <p>Informations personnelles</p>
+                
+                <p><i class="fas fa-user"></i> Nom : <span id="nom-ousmane"></span></p>
+                <p><i class="fas fa-user"></i> Prénom : <span id="prenom-ousmane"></span></p>
+                <p><i class="fas fa-calendar-alt"></i> Date de naissance : <span id="date-naissance-ousmane"></span></p>
+                <p><i class="fas fa-map-marker-alt"></i> Adresse : <span id="adresse-ousmane"></span></p>
+                <p><i class="fas fa-phone"></i> Téléphone : <span id="phone-ousmane"></span></p>
+                <p><i class="fas fa-envelope"></i> Email : <a id="email-ousmane" href="#"></a></p>
+            </div>
+        </header>
+        
+        <main>
+            <section id="exp_pro">
+                <div class="uno">
+                    <h2><i class="fas fa-briefcase"></i> Expériences Professionnelles</h2>
+                </div>
+                <ul id="experiences-list-ousmane"></ul>
+            </section>
+            
+            <section>
+                <div class="uno"> <i class="fas fa-cogs"></i>
+                    <h2>Compétences Techniques</h2>
+                </div>
+                <dl id="competences-tech-list-ousmane"></dl>
+            </section>
+            
+            <section>
+                <div class="uno">
+                    <h2><i class="fas fa-users-cog"></i> Compétences Fonctionnelles</h2>
+                </div>
+                <dl id="competences-fonct-list-ousmane"></dl>
+            </section>
+            
+            <section>
+                <div class="uno"><i class="fas fa-graduation-cap"></i>
+                    <h2>Formations</h2>
+                </div>
+                <ul id="formations-list-ousmane"></ul>
+            </section>
+            
+            <section>
+                <div class="uno">
+                    <h2><i class="fas fa-language"></i> Langues</h2>
+                </div>
+                <ul id="langues-list-ousmane"></ul>
+            </section>
+        </main>
+        
+        <footer id="footer1">
+            <div>
+                <p><i class="fas fa-phone"></i> Téléphone : <span id="footer-phone-ousmane"></span></p>
+                <p><i class="fas fa-envelope"></i> Email : <a id="footer-email-ousmane" href="#"></a></p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const profileId = document.body.id;
+            if (profileId) {
+                injectData(profileId);
+            }
+        });
+    </script>
+</body>
+</html>

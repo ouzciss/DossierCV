@@ -128,7 +128,7 @@ const profilesData = {
         },
         loisirs: ['Lecture', 'Voyages', 'Randonnée']
     },
-    'ibrahima_diouf': {
+    'ibrahima_sy': {
         name: 'Ibrahima Sy',
         jobTitle: 'developpeur full stack',
         location: 'Dakar, Sénégal',
@@ -346,7 +346,7 @@ function injectData(profileId) {
     }
     
     // Logique d'injection pour Ibrahima
-    if (profileId === 'ibrahima_diouf') {
+    if (profileId === 'ibrahima_sy') {
         const nameElement = document.getElementById('name-ibrahima');
         if (nameElement) nameElement.textContent = profile.name;
 

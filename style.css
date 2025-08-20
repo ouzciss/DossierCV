@@ -1087,98 +1087,98 @@ body.all-white-mode#ousmane_ciss #footer1 {
     color: #000;
 }
 
-body.dark-mode#ibrahima_diouf footer {
+body.dark-mode#ibrahima_sy footer {
     background-color: #333;
     color: #f0f0f0;
 }
 
-body.dark-mode#ibrahima_diouf footer .icon-footer {
+body.dark-mode#ibrahima_sy footer .icon-footer {
     filter: invert(1);
 }
 
-body.all-white-mode#ibrahima_diouf footer {
+body.all-white-mode#ibrahima_sy footer {
     background-color: #f4f6fb;
     color: #000;
 }
 
-body.all-white-mode#ibrahima_diouf footer .icon-footer {
+body.all-white-mode#ibrahima_sy footer .icon-footer {
     filter: invert(0);
 }
 
-body.dark-mode#ibrahima_diouf #header1 {
+body.dark-mode#ibrahima_sy #header1 {
     background: #333;
     color: #f0f0f0;
     animation: none;
 }
 
-body.dark-mode#ibrahima_diouf #header1 .icon {
+body.dark-mode#ibrahima_sy #header1 .icon {
     filter: invert(1);
 }
 
-body.dark-mode#ibrahima_diouf .left h3 {
+body.dark-mode#ibrahima_sy .left h3 {
     background: #444;
     color: #f0f0f0;
 }
-body.all-white-mode#ibrahima_diouf #header1 {
+body.all-white-mode#ibrahima_sy #header1 {
     background: #f4f6fb;
     color: #000;
     animation: none;
 }
 
-body.all-white-mode#ibrahima_diouf #header1 .icon {
+body.all-white-mode#ibrahima_sy #header1 .icon {
     filter: invert(0);
 }
 
-body.all-white-mode#ibrahima_diouf .left h3 {
+body.all-white-mode#ibrahima_sy .left h3 {
     background: #f8faff;
     color: #000;
 }
 
-body.dark-mode#ibrahima_diouf .theme-toggle .fa-sun {
+body.dark-mode#ibrahima_sy .theme-toggle .fa-sun {
     display: none;
 }
-body.dark-mode#ibrahima_diouf .theme-toggle .fa-moon {
+body.dark-mode#ibrahima_sy .theme-toggle .fa-moon {
     display: inline-block;
     color: #f0f0f0;
 }
 
 
-body.all-white-mode#ibrahima_diouf .theme-toggle .fa-sun {
+body.all-white-mode#ibrahima_sy .theme-toggle .fa-sun {
     display: inline-block;
     color: black;
 }
 
-body.all-white-mode#ibrahima_diouf .theme-toggle .fa-moon {
+body.all-white-mode#ibrahima_sy .theme-toggle .fa-moon {
     display: none;
 } 
 
-body.dark-mode#ibrahima_diouf .left ul,
-body.dark-mode#ibrahima_diouf .left li {
+body.dark-mode#ibrahima_sy .left ul,
+body.dark-mode#ibrahima_sy .left li {
     color: #f0f0f0;
 }
 
-body.dark-mode#ibrahima_diouf .cv-container {
+body.dark-mode#ibrahima_sy .cv-container {
     background-color: #1e1e1e; /* Fond du CV */
 }
 
-body.dark-mode#ibrahima_diouf .left p,
-body.dark-mode#ibrahima_diouf .left ul li {
+body.dark-mode#ibrahima_sy .left p,
+body.dark-mode#ibrahima_sy .left ul li {
     color: #f0f0f0; /* Texte des sections de gauche */
 }
 
-body.dark-mode#ibrahima_diouf .left {
+body.dark-mode#ibrahima_sy .left {
     border-right-color: #444; /* Couleur de la bordure droite */
 }
 
-body.all-white-mode#ibrahima_diouf .cv-container {
+body.all-white-mode#ibrahima_sy .cv-container {
     background-color: #fff;
 }
 
-body.all-white-mode#ibrahima_diouf .left p,
-body.all-white-mode#ibrahima_diouf .left ul li {
+body.all-white-mode#ibrahima_sy .left p,
+body.all-white-mode#ibrahima_sy .left ul li {
     color: #000;
 }
 
-body.all-white-mode#ibrahima_diouf .left {
+body.all-white-mode#ibrahima_sy .left {
     border-right-color: #eee;
 }
